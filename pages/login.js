@@ -24,20 +24,10 @@ class Home extends React.Component {
   responseGoogle = async (response) => {
     const { accessToken, profileObj = {} } = response ;
     const { email } = profileObj ;
-    // const googleAccount = await authRepository.checkIfUserAlreadySignedupWithGoogle(email)
-    // if(googleAccount.data === 'no_account_info'){
-
-    //   this.rootStore.SignupStore.googleAccessToken = userInfo.accessToken;
-    //   Router.push('/sign-up');
-      
-    // }else if(googleAccount.data._id){
-
-      const result = await R.submitGoogleAccessToken(accessToken)
-      console.log(result)
-      Router.push('/');
-    // }else{
-      
-    // }
+    const result = await R.submitGoogleAccessToken(accessToken)
+    console.log(result)
+    Router.push('/');
+   
   }
   render() {  
     const { PostStore } = this.props

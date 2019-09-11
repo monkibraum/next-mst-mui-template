@@ -13,8 +13,6 @@ class CustomApp extends App {
     appContext.ctx.mobxStore = mobxStore;
     await mobxStore.AuthStore.checkAuthState();
     const appProps = await App.getInitialProps(appContext);
-    // const _Props = await appContext.Component.getInitialProps(appContext.ctx)
-    // console.log(_Props)
     const from = typeof window === 'undefined'? 'server' : 'client'
     return {
       ...appProps,

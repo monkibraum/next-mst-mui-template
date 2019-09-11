@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "nodemon server.js",
     "build": "next build",
     "start": "next start"
   },
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/plugin-proposal-decorators": "^7.4.4"
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "nodemon": "^1.19.2"
   }
 }

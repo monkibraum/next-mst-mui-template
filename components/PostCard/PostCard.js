@@ -99,8 +99,8 @@ function PostCard({ classes }){
               <FavoriteBorderIcon />
             </IconButton>
           }
-          title="경성대 근사한 중식, 중찬"
-          subheader="부산 남구"
+          title="제목을 입력하세요"
+          subheader="subheader"
           />
           <CardMedia
           className={classes.media}
@@ -108,9 +108,9 @@ function PostCard({ classes }){
           title="Paella dish"
           />
           <CardContent>
-            <h3 className={classes.contentTop}>5일 남음</h3>
+            <h3 className={classes.contentTop}>사이드 텍스트</h3>
             <Typography className={classes.contentText} color="textSecondary" component="p">
-              경성대에 위치한 중찬에서 고급스러운 중식을 체험해보세요!
+              설명 텍스트를 입력하세요
             </Typography>
           </CardContent>
         </Card>

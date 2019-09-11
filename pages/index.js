@@ -24,14 +24,13 @@ class Home extends React.Component {
     };
   }
   componentDidMount(){
-    // this.props.PostStore.findAllPublicPosts()
+
   }
 
   render() {  
     const {PostStore} = this.props
     return (
     <div> 
-    {/* {PostStore.campaigns.slice()[0] && PostStore.campaigns.slice()[0].host_name} */}
       <Header/>
       <Grid container spacing={2}>
         <PostCard/>
@@ -41,7 +40,6 @@ class Home extends React.Component {
       </Grid>
     </div>
     )
-    // return <div className={this.props.classes.root}> {toJS(PostStore.hello)}</div>;
   }
 }
 

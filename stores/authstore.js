@@ -17,25 +17,5 @@ const Store = types.model({
 
 export default Store
 
-// export default function initStore() {
-//   if (isServer) {
-//     return Store.create({})
-//   }
-
-//   if(store === null){
-//     store = Store.create({})
-//     return store;
-//   }
-//   return store;
- 
-// }
-
-// export default function initStore(rootstore){
-//   if(store === null){
-//       store = Store.create({})
-//       return store;
-//   }
-//   return store;
-// }
 
 
